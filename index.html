@@ -30,6 +30,26 @@
                 align-items: center;
                 text-align: justify;
             }
+
+            .contact-us-text{
+                font-family: 'Roboto', sans-serif;
+                font-style: normal;
+                font-weight: 400;
+                font-size: 30px;
+                line-height: 40px;
+            }
+
+            .contact-us-icons{
+                position: absolute;
+                width: 80px;
+                height: 80px;
+                left: 275px;
+                
+            }
+
+            .footer-text{
+                font-size: 30px;
+            }
         </style>
         <!-- End of Custom CSS-->
     </head>
@@ -47,17 +67,17 @@
                         <span class="navbar-toggler-icon"></span>
                     </button>
                      
-                    <div class="collapse navbar-collapse" id="navbar">
+                    <div class="collapse navbar-collapse" id="navbar" style="display: block !important;">
                         
-                        <ul class="navbar-nav">
+                        <ul class="navbar-nav" style="float: right;">
                             <li class="nav-item">
-                                <a class="nav-link active" href="index.html">Home</a>
+                                <a class="nav-link active" href="index.html" style="font-size: 30px !important">Home</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="#about-us">About Us</a>
+                                <a class="nav-link" href="#about-us" style="font-size: 30px !important">About Us</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="#contact-us">Contact Us</a>
+                                <a class="nav-link" href="#contact-us" style="font-size: 30px !important;">Contact Us</a>
                             </li>
                         </ul>
                     </div>
@@ -96,12 +116,63 @@
                     </div>
                 </div>
             </div>
-            <div id="contact-us">
-                
+            <div id="contact-us" style="padding-top:30px !important">
+                <div class="container  text-center">
+                    <span class="display-5">Want to Reach out to us?</span>
+                </div>
+                <div class="row"  style="padding-top: 30px !important;">
+                    <div class="col-md-6 col-lg-6 col-xl-6 col-xxl-6 col-sm-12">
+                        <div class="text-center">
+                            <p class="display-6" >Our Contact Details</p>
+                            <div style="padding-top: 10px !important;">
+                                <i class="fa fa-envelope-square fa-3x" style="padding-top: 10px !important;"></i>
+                                <p class="contact-us-text"  style="padding-top: 10px !important;">support@example.com</p>
+                            </div>
+                            <div  style="padding-top: 10px !important;">
+                                <i class="fa fa-phone-alt fa-3x"  style="padding-top: 10px !important;"></i>
+                                <p class="contact-us-text"  style="padding-top: 10px !important;">96859685966</p>
+                            </div>
+                            <div  style="padding-top: 10px !important;">
+                                <i class="fa fa-map-marker-alt fa-3x"  style="padding-top: 10px !important;"></i>
+                                <p class="contact-us-text"  style="padding-top: 10px !important;">#24, WhatEver Street,<br>Blah blah road,<br>Bangalore 560025</p>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-6 col-xl-6 col-xxl-6 col-sm-12">
+                        <div class="container text-center">
+                            <span class="display-5">Write to us</span>
+                        </div>
+                        <div class="card">
+                            <div class="card-body">
+                                <form>
+                                    <div style="padding-top: 30px !important;">
+                                        <input class="form-control" type="text" placeholder="Please Enter your Name">
+                                    </div>
+                                    <div style="padding-top: 30px !important;">
+                                        <input class="form-control" type="text" placeholder="Please Enter your Phone Number">
+                                    </div>
+
+                                    <div style="padding-top: 30px !important;">
+                                        <input class="form-control" type="text" placeholder="Please Enter your Email Id">
+                                    </div>
+                                    <div style="padding-top: 30px !important;">
+                                        <textarea class="form-control" placeholder="Please Enter your Message" rows="6"></textarea>
+                                    </div>
+                                    <div style="padding-top: 20px !important;" class="text-center">
+                                        <button type="button" class="btn btn-outline-success">Send Message</button>
+                                    </div>
+                                </form>
+                            </div>                            
+                        </div>
+                    </div>
+                </div>
             </div>
         </main>
-        <footer>
-
+        <footer style="padding-top:60px !important">
+            <div class="container-fluid text-center" style="background-color: #c4c4c4; height: 150px;">
+                <p style="padding-top: 95px !important;" class="footer-text">All rights Reserved &copy; 2021 Example.com</p>
+            </div>
         </footer>
         <!--JS Section-->
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
